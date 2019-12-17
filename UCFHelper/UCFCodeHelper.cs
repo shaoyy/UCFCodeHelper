@@ -360,7 +360,7 @@ namespace UCFHelper
             if(codeType == CodeType.UCF) {
                 if (start == end) return $"NET \"{name}\" LOC = {set[offset]};\r\n";
                 for (int i = 0; i <= Math.Abs(end - start); i++) {
-                    builder.Append($"NET \"{name}\"[{start + i * Forward}] LOC = {set[offset+i]};\r\n");
+                    builder.Append($"NET \"{name}[{start + i * Forward}]\" LOC = {set[offset+i]};\r\n");
                 }
             }else if(codeType == CodeType.XDC) {
                 if (start == end) return $"set_property PACKAGE_PIN {set[offset]} [get_ports {name}]\r\n";
@@ -376,7 +376,7 @@ namespace UCFHelper
             if (codeType == CodeType.UCF) {
                 if (start == end) return $"NET \"{name}\" IOSTANDARD = LVCMOS18;\r\n";
                 for (int i = 0; i <= Math.Abs(end - start); i++) {
-                    builder.Append($"NET \"{name}\"[{start + i * Forward}] IOSTANDARD = LVCMOS18;\r\n");
+                    builder.Append($"NET \"{name}[{start + i * Forward}]\" IOSTANDARD = LVCMOS18;\r\n");
                 }
             } else if (codeType == CodeType.XDC) {
                 builder.Append($"set_property IOSTANDARD LVCMOS18 [get_ports {name}]\r\n");
@@ -389,7 +389,7 @@ namespace UCFHelper
             if (codeType == CodeType.UCF) {
                 if (start == end) return $"NET \"{name}\" PULLDOWN;\r\n";
                 for (int i = 0; i <= Math.Abs(end - start); i++) {
-                    builder.Append($"NET \"{name}\"[{start + i * Forward}] PULLDOWN;\r\n");
+                    builder.Append($"NET \"{name}[{start + i * Forward}]\" PULLDOWN;\r\n");
                 }
             } else if (codeType == CodeType.XDC) {
                 builder.Append($"set_property PULLDOWN true [get_ports {name}]\r\n");
@@ -402,7 +402,7 @@ namespace UCFHelper
             if (codeType == CodeType.UCF) {
                 if (start == end) return $"NET \"{name}\" CLOCK_DEDICATED_ROUTE = FALSE;\r\n";
                 for (int i = 0; i <= Math.Abs(end - start); i++) {
-                    builder.Append($"NET \"{name}\"[{start + i * Forward}] CLOCK_DEDICATED_ROUTE = FALSE;;\r\n");
+                    builder.Append($"NET \"{name}[{start + i * Forward}]\" CLOCK_DEDICATED_ROUTE = FALSE;;\r\n");
                 }
             } else if (codeType == CodeType.XDC) {
                 if (start == end) return $"set_property CLOCK_DEDICATED_ROUTE FALSE [get_nets {name}_IBUF]\r\n";

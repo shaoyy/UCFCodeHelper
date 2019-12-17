@@ -5,12 +5,12 @@ using System.Runtime.InteropServices;
 // 有关程序集的一般信息由以下
 // 控制。更改这些特性值可修改
 // 与程序集关联的信息。
-[assembly: AssemblyTitle("UCFHelper")]
+[assembly: AssemblyTitle("AcmInputHelper")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("UCFHelper")]
-[assembly: AssemblyCopyright("Copyright ©  2018 shaoyy")]
+[assembly: AssemblyProduct("AcmInputHelper")]
+[assembly: AssemblyCopyright("Copyright ©  2019")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // 如果此项目向 COM 公开，则下列 GUID 用于类型库的 ID
-[assembly: Guid("25dd88b7-36d0-4663-ba89-e1b696a8b1e5")]
+[assembly: Guid("2b0c9b06-949b-4056-b643-b7ec59a09517")]
 
 // 程序集的版本信息由下列四个值组成: 
 //
@@ -32,5 +32,5 @@ using System.Runtime.InteropServices;
 // 可以指定所有值，也可以使用以下所示的 "*" 预置版本号和修订号
 // 方法是按如下所示使用“*”: :
 // [assembly: AssemblyVersion("1.0.*")]
-[assembly: AssemblyVersion("1.0.0.4")]
-[assembly: AssemblyFileVersion("1.0.0.4")]
+[assembly: AssemblyVersion("1.0.0.0")]
+[assembly: AssemblyFileVersion("1.0.0.0")]

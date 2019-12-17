@@ -33,6 +33,7 @@
             this.显示样例ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuItemExample1 = new System.Windows.Forms.ToolStripMenuItem();
             this.menuItemExample2 = new System.Windows.Forms.ToolStripMenuItem();
+            this.menuItemExample3 = new System.Windows.Forms.ToolStripMenuItem();
             this.menuItemExit = new System.Windows.Forms.ToolStripMenuItem();
             this.编辑ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.默认管脚列表ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -41,6 +42,8 @@
             this.fGG484ToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.配置管脚顺序ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.管脚文件类型ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.codeTypeUcfMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.codeTypeXdcMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.关于ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuItemVersion = new System.Windows.Forms.ToolStripMenuItem();
             this.作者shaoyyToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -54,10 +57,9 @@
             this.textBoxClk = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.textBoxFalse = new System.Windows.Forms.TextBox();
-            this.menuItemExample3 = new System.Windows.Forms.ToolStripMenuItem();
-            this.codeTypeUcfMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.codeTypeXdcMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.compressCheckBox = new System.Windows.Forms.CheckBox();
+            this.githubToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem3 = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -133,27 +135,34 @@
             this.menuItemExample2,
             this.menuItemExample3});
             this.显示样例ToolStripMenuItem.Name = "显示样例ToolStripMenuItem";
-            this.显示样例ToolStripMenuItem.Size = new System.Drawing.Size(216, 26);
+            this.显示样例ToolStripMenuItem.Size = new System.Drawing.Size(144, 26);
             this.显示样例ToolStripMenuItem.Text = "显示样例";
             // 
             // menuItemExample1
             // 
             this.menuItemExample1.Name = "menuItemExample1";
-            this.menuItemExample1.Size = new System.Drawing.Size(216, 26);
+            this.menuItemExample1.Size = new System.Drawing.Size(123, 26);
             this.menuItemExample1.Text = "样例1";
             this.menuItemExample1.Click += new System.EventHandler(this.OnExampleMenuItemDown);
             // 
             // menuItemExample2
             // 
             this.menuItemExample2.Name = "menuItemExample2";
-            this.menuItemExample2.Size = new System.Drawing.Size(216, 26);
+            this.menuItemExample2.Size = new System.Drawing.Size(123, 26);
             this.menuItemExample2.Text = "样例2";
             this.menuItemExample2.Click += new System.EventHandler(this.OnExampleMenuItemDown);
+            // 
+            // menuItemExample3
+            // 
+            this.menuItemExample3.Name = "menuItemExample3";
+            this.menuItemExample3.Size = new System.Drawing.Size(123, 26);
+            this.menuItemExample3.Text = "样例3";
+            this.menuItemExample3.Click += new System.EventHandler(this.OnExampleMenuItemDown);
             // 
             // menuItemExit
             // 
             this.menuItemExit.Name = "menuItemExit";
-            this.menuItemExit.Size = new System.Drawing.Size(216, 26);
+            this.menuItemExit.Size = new System.Drawing.Size(144, 26);
             this.menuItemExit.Text = "退出";
             this.menuItemExit.Click += new System.EventHandler(this.OnExitMenuItemDown);
             // 
@@ -172,7 +181,7 @@
             this.默认管脚列表ToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.artix7ToolStripMenuItem});
             this.默认管脚列表ToolStripMenuItem.Name = "默认管脚列表ToolStripMenuItem";
-            this.默认管脚列表ToolStripMenuItem.Size = new System.Drawing.Size(216, 26);
+            this.默认管脚列表ToolStripMenuItem.Size = new System.Drawing.Size(186, 26);
             this.默认管脚列表ToolStripMenuItem.Text = "默认管脚：";
             // 
             // artix7ToolStripMenuItem
@@ -180,7 +189,7 @@
             this.artix7ToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.xC7A100TToolStripMenuItem1});
             this.artix7ToolStripMenuItem.Name = "artix7ToolStripMenuItem";
-            this.artix7ToolStripMenuItem.Size = new System.Drawing.Size(216, 26);
+            this.artix7ToolStripMenuItem.Size = new System.Drawing.Size(128, 26);
             this.artix7ToolStripMenuItem.Text = "Artix7";
             // 
             // xC7A100TToolStripMenuItem1
@@ -200,7 +209,7 @@
             // 配置管脚顺序ToolStripMenuItem
             // 
             this.配置管脚顺序ToolStripMenuItem.Name = "配置管脚顺序ToolStripMenuItem";
-            this.配置管脚顺序ToolStripMenuItem.Size = new System.Drawing.Size(216, 26);
+            this.配置管脚顺序ToolStripMenuItem.Size = new System.Drawing.Size(186, 26);
             this.配置管脚顺序ToolStripMenuItem.Text = "//配置管脚顺序";
             // 
             // 管脚文件类型ToolStripMenuItem
@@ -209,8 +218,22 @@
             this.codeTypeUcfMenuItem,
             this.codeTypeXdcMenuItem});
             this.管脚文件类型ToolStripMenuItem.Name = "管脚文件类型ToolStripMenuItem";
-            this.管脚文件类型ToolStripMenuItem.Size = new System.Drawing.Size(216, 26);
+            this.管脚文件类型ToolStripMenuItem.Size = new System.Drawing.Size(186, 26);
             this.管脚文件类型ToolStripMenuItem.Text = "管脚文件类型";
+            // 
+            // codeTypeUcfMenuItem
+            // 
+            this.codeTypeUcfMenuItem.Name = "codeTypeUcfMenuItem";
+            this.codeTypeUcfMenuItem.Size = new System.Drawing.Size(170, 26);
+            this.codeTypeUcfMenuItem.Text = "ucf(ISE)";
+            this.codeTypeUcfMenuItem.Click += new System.EventHandler(this.codeTypeMenuItem_Click);
+            // 
+            // codeTypeXdcMenuItem
+            // 
+            this.codeTypeXdcMenuItem.Name = "codeTypeXdcMenuItem";
+            this.codeTypeXdcMenuItem.Size = new System.Drawing.Size(170, 26);
+            this.codeTypeXdcMenuItem.Text = "xdc(Vivado)";
+            this.codeTypeXdcMenuItem.Click += new System.EventHandler(this.codeTypeMenuItem_Click);
             // 
             // 关于ToolStripMenuItem
             // 
@@ -218,7 +241,9 @@
             this.menuItemVersion,
             this.作者shaoyyToolStripMenuItem,
             this.mailshaoyysakuragamingcomToolStripMenuItem,
-            this.可解决360误报希望能联系我ToolStripMenuItem});
+            this.可解决360误报希望能联系我ToolStripMenuItem,
+            this.toolStripMenuItem3,
+            this.githubToolStripMenuItem});
             this.关于ToolStripMenuItem.Name = "关于ToolStripMenuItem";
             this.关于ToolStripMenuItem.Size = new System.Drawing.Size(51, 24);
             this.关于ToolStripMenuItem.Text = "关于";
@@ -226,13 +251,13 @@
             // menuItemVersion
             // 
             this.menuItemVersion.Name = "menuItemVersion";
-            this.menuItemVersion.Size = new System.Drawing.Size(321, 26);
+            this.menuItemVersion.Size = new System.Drawing.Size(315, 26);
             this.menuItemVersion.Text = "Version:";
             // 
             // 作者shaoyyToolStripMenuItem
             // 
             this.作者shaoyyToolStripMenuItem.Name = "作者shaoyyToolStripMenuItem";
-            this.作者shaoyyToolStripMenuItem.Size = new System.Drawing.Size(321, 26);
+            this.作者shaoyyToolStripMenuItem.Size = new System.Drawing.Size(315, 26);
             this.作者shaoyyToolStripMenuItem.Text = "Auther:shaoyy";
             // 
             // mailshaoyysakuragamingcomToolStripMenuItem
@@ -244,7 +269,7 @@
             // 可解决360误报希望能联系我ToolStripMenuItem
             // 
             this.可解决360误报希望能联系我ToolStripMenuItem.Name = "可解决360误报希望能联系我ToolStripMenuItem";
-            this.可解决360误报希望能联系我ToolStripMenuItem.Size = new System.Drawing.Size(321, 26);
+            this.可解决360误报希望能联系我ToolStripMenuItem.Size = new System.Drawing.Size(315, 26);
             this.可解决360误报希望能联系我ToolStripMenuItem.Text = "可解决360误报希望能联系我";
             // 
             // label3
@@ -316,27 +341,6 @@
             this.textBoxFalse.TabIndex = 13;
             this.textBoxFalse.TextChanged += new System.EventHandler(this.OnInputOutputTextBoxChanged);
             // 
-            // menuItemExample3
-            // 
-            this.menuItemExample3.Name = "menuItemExample3";
-            this.menuItemExample3.Size = new System.Drawing.Size(216, 26);
-            this.menuItemExample3.Text = "样例3";
-            this.menuItemExample3.Click += new System.EventHandler(this.OnExampleMenuItemDown);
-            // 
-            // codeTypeUcfMenuItem
-            // 
-            this.codeTypeUcfMenuItem.Name = "codeTypeUcfMenuItem";
-            this.codeTypeUcfMenuItem.Size = new System.Drawing.Size(216, 26);
-            this.codeTypeUcfMenuItem.Text = "ucf(ISE)";
-            this.codeTypeUcfMenuItem.Click += new System.EventHandler(this.codeTypeMenuItem_Click);
-            // 
-            // codeTypeXdcMenuItem
-            // 
-            this.codeTypeXdcMenuItem.Name = "codeTypeXdcMenuItem";
-            this.codeTypeXdcMenuItem.Size = new System.Drawing.Size(216, 26);
-            this.codeTypeXdcMenuItem.Text = "xdc(Vivado)";
-            this.codeTypeXdcMenuItem.Click += new System.EventHandler(this.codeTypeMenuItem_Click);
-            // 
             // compressCheckBox
             // 
             this.compressCheckBox.AutoSize = true;
@@ -349,6 +353,18 @@
             this.compressCheckBox.Text = "压缩";
             this.compressCheckBox.UseVisualStyleBackColor = true;
             this.compressCheckBox.CheckedChanged += new System.EventHandler(this.compressCheckBox_CheckedChanged);
+            // 
+            // githubToolStripMenuItem
+            // 
+            this.githubToolStripMenuItem.Name = "githubToolStripMenuItem";
+            this.githubToolStripMenuItem.Size = new System.Drawing.Size(348, 26);
+            this.githubToolStripMenuItem.Text = "github.com/shaoyy/UCFCodeHelper";
+            // 
+            // toolStripMenuItem3
+            // 
+            this.toolStripMenuItem3.Name = "toolStripMenuItem3";
+            this.toolStripMenuItem3.Size = new System.Drawing.Size(348, 26);
+            this.toolStripMenuItem3.Text = " ";
             // 
             // MainForm
             // 
@@ -418,6 +434,8 @@
         private System.Windows.Forms.ToolStripMenuItem codeTypeUcfMenuItem;
         private System.Windows.Forms.ToolStripMenuItem codeTypeXdcMenuItem;
         private System.Windows.Forms.CheckBox compressCheckBox;
+        private System.Windows.Forms.ToolStripMenuItem githubToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem3;
     }
 }
 
